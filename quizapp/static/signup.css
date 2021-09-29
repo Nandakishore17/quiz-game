@@ -1,0 +1,17 @@
+
+.error{
+    color: rgb(255, 0, 0);
+}
+.form-control{
+    width: 500px;
+}
+.signupform{
+    margin-left:790px;
+}
+.head{
+    color: rgb(85, 231, 105);
+    font-size: 200px;
+}
+.headx{
+    color: white;
+}

@@ -1,0 +1,79 @@
+.headder{
+    color: rgb(47, 151, 47);
+}
+.form-control{
+    width: 300px;
+}
+.login_container{
+    padding-top: 70px;
+    padding-left: 80px;
+    margin-left:90px;
+    margin-top: 50px;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.signupcontainer{
+    padding-top: 90px;
+    padding-left: 120px;
+    height: 800px;
+    background-color: rgb(245, 245, 245);
+}
+
+
+.signinbtn{
+    margin-top: 40px;
+    color: white;
+    width: 150px;
+    height: 45px;
+    border: solid 1px rgb(47, 151, 47);
+    background-color: rgb(47, 151, 47);
+    border-radius: 25px;
+    font-weight: 600;
+
+}
+.signinbtn:hover{
+    color: white;
+    border: solid 1px rgb(37, 143, 37) ;
+    text-decoration: none;
+    background-color: rgb(37, 143, 37);
+    transition: .4s;
+
+}
+.donthave{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 18px;
+    font-weight: 500;
+
+}
+
+.donthavex{
+    font-size: 27px;
+    margin-top: 100px;
+    font-weight: 400;
+}
+.signupnow{
+    text-decoration: none;
+    color: rgb(59, 182, 3);
+    border: 3px solid green;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    font-weight: 500;
+    
+    
+}
+.signupnow:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(47, 151, 47);
+    border-color: rgb(47, 151, 47);
+    transition: .7s;
+}
+    
+
+    
+

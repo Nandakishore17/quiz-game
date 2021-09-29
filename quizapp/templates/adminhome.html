@@ -1,0 +1,120 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+
+  <!-- <link rel="stylesheet" href="{% static 'login.css' %}"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'admin.css' %}">
+
+
+  <title>Hello, world!</title>
+</head>
+
+<style>
+  /* .headderx {
+    color: aqua;
+  } */
+
+  
+
+
+
+</style>
+
+<body>
+
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxx NAV BAR XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img style="width: 100px;margin-left: 20px;" src="{% static 'images/logo.jpg' %}" alt="">
+      ADMIN HOME PAGE
+      
+    </a>
+  </nav>
+
+  
+
+
+
+
+
+
+
+
+
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+  <!-- <h1 class="adminx">Admin home page!</h1> -->
+
+  <!-- Example split danger button -->
+
+
+  
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 firstcol"
+        style="color: aqua; height:900px;background-color: rgb(163, 163, 168); margin-top: 0%;">
+        <!-- <br>
+        <a href="">testing</a><br>
+        <a href="">testing</a><br>
+        <a href="">testing</a><br>
+        <a href="">testing</a><br> -->
+        <div class="listx" style="margin-top: 10px;">
+
+          <ul class="list-group">
+            <li class="list-group-item"><a href="adminfirstpage" style="text-decoration: none;">HOME</a> </li>
+            <li class="list-group-item"><a href="addquestion" style="text-decoration: none;">ADD QUESTION</a> </li>
+            <li class="list-group-item"><a href="test2" style="text-decoration: none;">ADD 1</a> </li>
+            <li class="list-group-item"><a href="test3" style="text-decoration: none;">ADD 2</a> </li>
+            <li class="list-group-item"><a href="" style="text-decoration: none;">ADD 3</a> </li>
+            <li class="list-group-item"><a href="" style="text-decoration: none;">ADD 4</a> </li>
+          </ul>
+
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-lg-10 secondcol">
+
+        {% block add %}
+        {% endblock %}
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
