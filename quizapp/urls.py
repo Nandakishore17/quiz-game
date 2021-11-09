@@ -19,6 +19,7 @@ urlpatterns = [
     path('deletetable/<int:deletex>', views.deletetable, name='deletetable'),
     path('updatetable', views.updatetable, name='updatetable'),
     path('', views.homefun, name='home'),
+    path('adminpage_2',views.adminpage,name='adminpage')
 
 
 

@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        background-color:rgb(232, 240, 235);
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .container-fluid {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .nav-itemx {
+        float: left;
+    }
+
+    h1 {
+        padding-left: 20px;
+    }
+
+    div {
+        border-radius: 0px;
+    }
+    .flex{
+        float: left;
+        margin-top: 70px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px rgb(184, 184, 184);
+    }
+    .flex2{
+        float: left;
+        margin-top: 10px;
+        border-radius: 7px;
+        
+        box-shadow: 1px 1px 1px 1px rgb(184, 184, 184);
+    
+    }
+    .bigbox{
+        border-radius: 7px;
+        
+        box-shadow: 1px 1px 1px 1px rgb(184, 184, 184);
+        padding-top: 2px;
+    }
+    h1{
+        font-size: 18px;
+        color: rgb(131, 131, 131);
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    h2{
+        margin-left: 30px;
+        font-size: 60px;
+    }
+    h3{
+        font-size: 80px;
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+
+
+    <!-- 
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-2" style="height: 100px;background-color: blue;">
+            <img src="{% static 'images/baxter.jpg'%}" style="width: 190px;height: 50px;margin-top: 3px;margin-left: 10px;" alt="">
+            </div> -->
+    <!-- <div class="col-lg-10 col-md-10" style="height: 100px;background-color: rgb(52, 212, 37);"></div>
+        </div> -->
+    <!-- </div> -->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12" style="height: 70px;background-color: rgb(255, 255, 255);">
+                <img class="nav-itemx" src="{% static 'images/baxter.jpg'%}"
+                    style="width: 190px;height: 50px;margin-top: 20px;margin-left: 10px;" alt="">
+                <h1 class="nav-itemx"
+                    style="margin-top: 42px;font-size: x-large;margin-left: 20px;color: rgb(30, 49, 112);font-style: italic;font-weight: 700;">
+                    Cloud Dashboard</h1>
+            </div>
+            <!-- side anv bar xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+           <div class="row">
+               <div class="col-lg-2" style="background-color: rgb(1, 0, 53);height: 230px;"></div>
+               <div class="col-lg-3" style="background-color: rgb(232, 240, 235);height: 230px;">
+                <div class="bigbox" style="width: 250px;height: 150px;background-color: rgb(255, 255, 255);margin-top: 70px;margin-left: 100px;">
+                <h1>Total Instances</h1><h3>1717</h3></div>
+            </div>
+               <div class="col-lg-7" style="background-color: rgb(232, 240, 235);height: 230px;">
+                <div class="flex" style="width: 180px;height: 150px;background-color: rgb(255, 255, 255);margin-left: 1px;"><h1>Windows</h1><br><h2>1717</h2></div>
+                <div class="flex" style="width: 180px;height: 150px;background-color: rgb(255, 255, 255);margin-left: 20px;"><h1>Linux</h1><br><h2>1717</h2></div>
+                <div class="flex" style="width: 180px;height: 150px;background-color: rgb(255, 255, 255);margin-left: 20px;"><h1>Edit here</h1><br><h2>1717</h2></div>
+               
+                
+                
+            </div>
+              
+           </div>
+           <div class="row">
+               <div class="col-lg-2" style="background-color: rgb(1, 0, 53);height: 570px;"></div>
+               <div class="col-lg-3" style="background-color: rgb(232, 240, 235);height: 270px;">
+                <div class="bigbox" style="width: 250px;height: 150px;background-color:rgb(255, 255, 255);margin-top: 10px;margin-left: 100px;">
+                <h1>Non Compliance Instances</h1><h3>1717</h3></div>
+            </div>
+               <div class="col-lg-7" style="background-color: rgb(232, 240, 235);height: 270px;">
+                <div class="flex2" style="width: 180px;height: 150px;background-color: rgb(255, 253, 253);margin-left: 1px;"><h1>Ohio</h1><h2>1717</h2></div>
+                <div class="flex2" style="width: 180px;height: 150px;background-color: rgb(255, 255, 255);margin-left: 20px;"><h1>Frankfurt</h1><h2>1717</h2></div>
+                <div class="flex2" style="width: 180px;height: 150px;background-color: rgb(255, 255, 255);margin-left: 20px;"><h1>Singapore</h1><h2>1717</h2> </div>
+            </div>
+              
+           </div>
+
+
+</body>
+
+</html>

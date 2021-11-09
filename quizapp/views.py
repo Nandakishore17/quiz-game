@@ -1,8 +1,8 @@
 from django.shortcuts import redirect, render
-from .models import *
+from .models import * 
 
 # xxxxxxxxxxxxxxxx saving to data base xxxxxxxxxxxxxxxxxxxxxxxxxx
-
+ 
 
 def signup(request):
     if (request.method == 'POST'):
@@ -37,8 +37,8 @@ def deletetable(request, deletex):
 
 
 def updatetable(request):
-
-    return render(request, 'update.html')
+    userdata = signup_form.objects.get(id=deletex)
+    return render(request, 'update.html', {'userdata': userdata})
 
 
 # Create your views here.
@@ -63,19 +63,21 @@ def adminhomefun(request):
 
 
 def loginfun(request):
-    # if(request.method == 'POST'):
-    #     usernamex = request.POST['userxx']
-    #     passwordx = request.POST['passwordxx']
+    if(request.method == 'POST'):
+        usernamex = request.POST['userxx']
+        passwordx = request.POST['passwordxx']
 
-    #     try:
-    #         user_name = admin_reg.objects.get(username=usernamex)
-    #         if(user_name.username == usernamex and user_name. password == passwordx):
-    #             return render(request, 'adminhome.html')
-    #         else:
-    #             return render(request, 'login.html', {'message': 'login failed'})
+        try:
+            user_name = admin_reg.objects.get(username=usernamex)
 
-    #     except admin_reg.DoesNotExist:
-    #         return render(request, 'login.html', {'message': 'login failed'})
+            if(user_name.username == usernamex and user_name. password == passwordx):
+                return render(request, 'adminhome.html')
+            else:
+
+                return render(request, 'login.html', {'message': 'login failed'})
+
+        except admin_reg.DoesNotExist:
+            return render(request, 'login.html', {'message': 'login failed'})
 
     return render(request, 'login.html')
 
@@ -89,10 +91,9 @@ def addquestion(request):
         option_c = request.POST['option_cx']
         option_d = request.POST['option_dx']
         correct_ans = request.POST['correctansx']
-        obj_qestion = Quiz_question(Questions=question,Category=category,Option_A=option_a,Option_B=option_b,Option_C=option_c,Option_D=option_d,Answer=correct_ans)
+        obj_qestion = Quiz_question(Questions=question, Category=category, Option_A=option_a,
+                                    Option_B=option_b, Option_C=option_c, Option_D=option_d, Answer=correct_ans)
         obj_qestion.save()
-
-
 
     return render(request, 'addquestion.html')
 
@@ -110,4 +111,8 @@ def adminfirstpage(request):
 
 
 def homefun(request):
-    return render(request,'homepage.html')
+    return render(request, 'homepage.html')
+
+
+def adminpage(request):
+    return render(request,'admin_page.html')

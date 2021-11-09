@@ -49,8 +49,10 @@
 }
 
 .donthavex{
+    color: rgb(185, 9, 9);
     font-size: 27px;
-    margin-top: 100px;
+    margin-top: 8
+    0px;
     font-weight: 400;
 }
 .signupnow{
@@ -69,7 +71,7 @@
 .signupnow:hover{
     text-decoration: none;
     color: white;
-    background-color: rgb(47, 151, 47);
+    background-color: rgb(42, 126, 42);
     border-color: rgb(47, 151, 47);
     transition: .7s;
 }

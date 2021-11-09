@@ -3,8 +3,60 @@
     height: 80px;
     margin-left: 10px;
 }
+body{
+    background-color:rgb(226, 17, 17) ;
+}
+
+
+
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }
+
+ .imagediv1{
+    height: 400px;
+    background-color: rgb(255, 5, 5);
+
+ }
+ .imagediv2{
+    height: 400px;
+    background-color: rgb(238, 238, 238);
+
+ }
+
+
+ .imagediv{
+    
+     height: 400px;
+     background-color: rgb(255, 255, 255);
+ }
+ .imagecontainer{
+     margin-left: 50px;
+ }
+ .imagex{
+     margin-left: 150px;
+     margin-top: 25px;
+     width: 800px;
+     height: 350px;
+ }
+
+
+
+body{
+     
+     
+     
+     background-repeat: no-repeat;
+
+}
+
+
 .menuesx{
-    right: 0px;
+    right: 60px;
     margin-left: 800px;
 
 }
@@ -34,3 +86,14 @@
     
 
 }
+
+
+/* .textcol1{
+    height: 200px;
+    background-color: blue;
+}
+.textcol1{
+    height: 200px;
+    background-color: blue;
+
+} */
